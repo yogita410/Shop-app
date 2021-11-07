@@ -1,0 +1,38 @@
+<%- include('../partials/header') %> 
+<%- include('../partials/navbar') %> 
+
+<main class="conatiner">
+   
+    
+    <div class="row">
+        
+        <div class="col-md-6 mx-auto" >
+            <h3>New Product</h3>
+           <form action="/products/new" method="post">
+            <div class="mb-2">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder=" Product Name">
+            </div>
+            <div class="mb-2">
+                <label for="img"  class="form-label" >Image - URL</label>
+              <input type="text"  class="form-control" name="img" id="img" placeholder="Product Image URL">
+            </div>
+            <div class="mb-2">
+                <label for="price" class="form-label">Price</label>
+                <span class="input-group-text">&#8377; &nbsp; <input type="number"  class="form-control" name="price" id="price" placeholder=" Product Price"></span>
+              
+            </div>
+            <div class="mb-2">
+            <label for="desc" class="form-label">Description</label>
+              <textarea  class="form-control" name="desc" id="desc" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+            </div>
+          
+    </div>
+  
+</main>
+
+
+<%- include('../partials/footer') %> 
